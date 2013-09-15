@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="preference_key_email_developer">preference_key_email_developer</string>
+    <string name="preference_key_more_apps">preference_key_more_apps</string>
+    <string name="preference_key_clear">preference_key_clear</string>
+    <string name="preference_key_error">preference_key_error</string>
+    <string name="developer_email_address">cketti.apps@gmail.com</string>
+    <string name="developer_email_uri">cketti.apps@gmail.com?subject=K-9%20Mail%20for%20SmartWatch</string>
+    <string name="more_apps_uri">https://play.google.com/store/apps/developer?id=cketti</string>
+</resources>

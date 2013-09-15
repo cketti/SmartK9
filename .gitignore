@@ -1,0 +1,12 @@
+.gradle
+build
+.idea
+assets
+bin
+gen
+proguard-project.txt
+project.properties
+local.properties
+gradle.properties
+*.iml
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="46"
+   height="46"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   sodipodi:docname="okay.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="15.421875"
+     inkscape:cx="7.3512354"
+     inkscape:cy="15.460208"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1547"
+     inkscape:window-height="876"
+     inkscape:window-x="53"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1006.3622)">
+    <path
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 33.46875 12.09375 C 33.346849 12.121565 33.242852 12.163398 33.15625 12.25 L 18.34375 27.0625 L 12.71875 21.4375 C 12.545546 21.264296 11.985143 21.514857 11.46875 22.03125 L 9.78125 23.71875 C 9.2648568 24.235143 8.9830462 24.795546 9.15625 24.96875 L 15.75 31.53125 L 17.40625 33.1875 L 18.03125 33.8125 C 18.211985 33.993235 18.475515 33.993235 18.65625 33.8125 L 18.8125 33.625 C 18.865654 33.596598 18.925449 33.543301 18.96875 33.5 L 19.28125 33.1875 L 20.21875 32.25 L 20.9375 31.53125 C 21.066598 31.402152 21.185437 31.283621 21.28125 31.15625 L 36.6875 15.78125 C 37.033908 15.434842 36.891393 14.735143 36.375 14.21875 L 34.71875 12.5625 C 34.331455 12.175205 33.834453 12.010304 33.46875 12.09375 z "
+       transform="translate(0,1006.3622)"
+       id="rect2985" />
+  </g>
+</svg>

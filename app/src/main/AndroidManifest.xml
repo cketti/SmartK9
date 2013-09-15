@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="de.cketti.smartwatch.k9"
+      android:versionName="0.5.0" android:versionCode="500">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18"/>
+
+    <uses-permission android:name="com.sonyericsson.extras.liveware.aef.EXTENSION_PERMISSION"/>
+    <uses-permission android:name="com.fsck.k9.permission.READ_MESSAGES"/>
+    <uses-permission android:name="com.fsck.k9.permission.DELETE_MESSAGES"/>
+
+    <application android:icon="@drawable/icon_framed" android:label="@string/app_name">
+
+        <activity android:name=".K9PreferenceActivity"
+                  android:label="@string/preference_activity_title"
+                  android:icon="@drawable/icon">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".K9ExtensionService" />
+
+        <receiver android:name=".ExtensionReceiver">
+             <intent-filter>
+                 <!-- Generic extension intents. -->
+                 <action android:name="com.sonyericsson.extras.liveware.aef.registration.EXTENSION_REGISTER_REQUEST" />
+                 <action android:name="com.sonyericsson.extras.liveware.aef.registration.ACCESSORY_CONNECTION"/>
+                 <action android:name="android.intent.action.LOCALE_CHANGED" />
+
+                 <!-- Notification intents -->
+                 <action android:name="com.sonyericsson.extras.liveware.aef.notification.VIEW_EVENT_DETAIL"/>
+                 <action android:name="com.sonyericsson.extras.liveware.aef.notification.REFRESH_REQUEST"/>
+
+                 <!-- Widget intents -->
+                 <action android:name="com.sonyericsson.extras.aef.widget.START_REFRESH_IMAGE_REQUEST"/>
+                 <action android:name="com.sonyericsson.extras.aef.widget.STOP_REFRESH_IMAGE_REQUEST"/>
+                 <action android:name="com.sonyericsson.extras.aef.widget.ONTOUCH"/>
+                 <action android:name="com.sonyericsson.extras.liveware.extension.util.widget.scheduled.refresh"/>
+
+                 <!-- Control intents -->
+                 <action android:name="com.sonyericsson.extras.aef.control.START"/>
+                 <action android:name="com.sonyericsson.extras.aef.control.STOP"/>
+                 <action android:name="com.sonyericsson.extras.aef.control.PAUSE"/>
+                 <action android:name="com.sonyericsson.extras.aef.control.RESUME"/>
+                 <action android:name="com.sonyericsson.extras.aef.control.ERROR"/>
+                 <action android:name="com.sonyericsson.extras.aef.control.KEY_EVENT"/>
+                 <action android:name="com.sonyericsson.extras.aef.control.TOUCH_EVENT"/>
+                 <action android:name="com.sonyericsson.extras.aef.control.SWIPE_EVENT"/>
+                 <action android:name="com.sonyericsson.extras.aef.control.OBJECT_CLICK_EVENT" />
+                 <action android:name="com.sonyericsson.extras.aef.control.MENU_ITEM_SELECTED" />
+            </intent-filter>
+
+            <!-- K-9 Mail intents -->
+            <intent-filter>
+                <data android:scheme="email"/>
+                <action android:name="com.fsck.k9.intent.action.EMAIL_RECEIVED"/>
+                <action android:name="com.fsck.k9.intent.action.EMAIL_DELETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.fsck.k9.intent.action.REFRESH_OBSERVER"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>
