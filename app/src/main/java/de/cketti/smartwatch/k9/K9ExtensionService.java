@@ -118,13 +118,13 @@ public class K9ExtensionService extends ExtensionService {
 //        String profileImage = ExtensionUtils.getUriString(this,
 //                R.drawable.widget_default_userpic_bg);
 
-        String from = intent.getStringExtra(K9Helper.IntentExtras.FROM);
         String subject = intent.getStringExtra(K9Helper.IntentExtras.SUBJECT);
         Date time = (Date) intent.getSerializableExtra(K9Helper.IntentExtras.SENT_DATE);
         Uri emailUri = intent.getData();
 
-        String preview = "";
-        String sender = from;
+        String preview = null;
+        String sender = null;
+        boolean found = false;
         try {
             Cursor cursor = getContentResolver().query(
                     K9Helper.INBOX_MESSAGES_URI, MESSAGE_PROJECTION, null, null, null);
@@ -136,6 +136,7 @@ public class K9ExtensionService extends ExtensionService {
                         if (emailUri.toString().equals(uri)) {
                             preview = cursor.getString(PREVIEW_COLUMN);
                             sender = cursor.getString(SENDER_COLUMN);
+                            found = true;
                             break;
                         }
                     }
@@ -145,6 +146,11 @@ public class K9ExtensionService extends ExtensionService {
             }
         } catch (Exception e) {
             Log.e(LOG_TAG, "Couldn't read data from K-9 Mail", e);
+        }
+
+        if (!found) {
+            // Message not found in K-9 Mail's content provider -> not creating a notification
+            return;
         }
 
         ContentValues eventValues = new ContentValues();
