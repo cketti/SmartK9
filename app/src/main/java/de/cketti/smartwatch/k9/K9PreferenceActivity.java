@@ -21,6 +21,13 @@ import com.sonyericsson.extras.liveware.extension.util.notification.Notification
 public class K9PreferenceActivity extends PreferenceActivity {
     private static final int DIALOG_CLEAR = 1;
 
+    private static final int ERROR_K9_NOT_INSTALLED = 1;
+    private static final int ERROR_K9_PERMISSION_ERROR = 2;
+    private static final int ERROR_K9_NOT_ENABLED = 3;
+
+
+    private int mError;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,15 +74,70 @@ public class K9PreferenceActivity extends PreferenceActivity {
         }
 
         preference = findPreference(getString(R.string.preference_key_error));
+        preference.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                switch (mError) {
+                    case ERROR_K9_NOT_INSTALLED: {
+                        openPlayStore();
+                        break;
+                    }
+                    case ERROR_K9_PERMISSION_ERROR: {
+                        openAppInfo();
+                        break;
+                    }
+                    case ERROR_K9_NOT_ENABLED: {
+                        startK9();
+                        break;
+                    }
+                }
+                return true;
+            }
+        });
+
         if (!K9Helper.isK9Installed(this)) {
             preference.setSummary(R.string.preference_status_k9_not_installed);
+            mError = ERROR_K9_NOT_INSTALLED;
         } else if (!K9Helper.hasK9ReadPermission(this)) {
             preference.setSummary(R.string.preference_status_k9_permission_error);
+            mError = ERROR_K9_PERMISSION_ERROR;
         } else if (!K9Helper.isK9Enabled(this)) {
             preference.setSummary(R.string.preference_status_k9_not_enabled);
+            mError = ERROR_K9_NOT_ENABLED;
         } else {
             getPreferenceScreen().removePreference(preference);
         }
+    }
+
+    private void openPlayStore() {
+        Uri uri = Uri.parse("market://details?id=" + K9Helper.PACKAGE_NAME);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        try {
+            startActivity(intent);
+        } catch (Exception e) {
+            Log.e(K9ExtensionService.LOG_TAG, "Couldn't open K-9 Mail Play Store page", e);
+        }
+    }
+
+    private void openAppInfo() {
+        Intent intent = new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+        intent.addCategory(Intent.CATEGORY_DEFAULT);
+        intent.setData(Uri.parse("package:" + getPackageName()));
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        try {
+            startActivity(intent);
+        } catch (Exception e) {
+            Log.e(K9ExtensionService.LOG_TAG, "Couldn't open app details", e);
+        }
+    }
+
+    private void startK9() {
+        Intent intent = K9Helper.getStartK9Intent(this);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     @Override
