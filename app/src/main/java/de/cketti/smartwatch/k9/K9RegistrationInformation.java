@@ -93,12 +93,14 @@ public class K9RegistrationInformation extends RegistrationInformation {
     public ContentValues getSourceRegistrationConfiguration(String extensionSpecificId) {
         String iconSource1 = ExtensionUtils.getUriString(mContext, R.drawable.k9_30x30);
         String iconSource2 = ExtensionUtils.getUriString(mContext, R.drawable.k9_18x18);
+        String iconBw = ExtensionUtils.getUriString(mContext, R.drawable.k9_18x18_bw);
         String textToSpeech = mContext.getString(R.string.text_to_speech);
 
         ContentValues sourceValues = new ContentValues();
         sourceValues.put(Notification.SourceColumns.ENABLED, true);
         sourceValues.put(Notification.SourceColumns.ICON_URI_1, iconSource1);
         sourceValues.put(Notification.SourceColumns.ICON_URI_2, iconSource2);
+        sourceValues.put(Notification.SourceColumns.ICON_URI_BLACK_WHITE, iconBw);
         sourceValues.put(Notification.SourceColumns.UPDATE_TIME, System.currentTimeMillis());
         sourceValues.put(Notification.SourceColumns.NAME, mContext.getString(R.string.source_name));
         sourceValues.put(Notification.SourceColumns.EXTENSION_SPECIFIC_ID, extensionSpecificId);
