@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">K-9 Mail for SmartWatch</string>
-    <string name="preference_activity_title">K-9 Mail for SmartWatch Settings</string>
-    <string name="configuration_text">K-9 Mail for SmartWatch Settings</string>
+    <string name="app_name">K-9 Mail SmartWatch</string>
+    <string name="preference_activity_title">Настройки K-9 Mail SW</string>
+    <string name="configuration_text">Настройки K-9 Mail SW</string>
 
     <string name="extension_name">K-9 Mail</string>
     <string name="source_name">K-9 Mail</string>
 
-    <string name="action_event_1">Open on phone</string>
-    <string name="action_event_2">Mark as read</string>
-    <string name="action_event_3">Delete</string>
+    <string name="action_event_1">В K-9 Mail</string>
+    <string name="action_event_2">Прочитано</string>
+    <string name="action_event_3">Удалить</string>
 
     <!-- Text that is read before the display name on accessories that supports text to speech -->
-    <string name="text_to_speech">New message from </string>
+    <string name="text_to_speech">Почта от </string>
 
-    <string name="preference_category_other">Other</string>
-    <string name="preference_option_email_developer_title">Email developer</string>
-    <string name="preference_option_more_apps_title">More apps</string>
-    <string name="preference_option_more_apps_summary">More apps by cketti</string>
+    <string name="preference_category_other">Прочее</string>
+    <string name="preference_option_email_developer_title">Обратная связь</string>
+    <string name="preference_option_more_apps_title">Ещё приложения</string>
+    <string name="preference_option_more_apps_summary">Другие приложения cketti</string>
 
-    <string name="preference_option_clear">Clear all events</string>
-    <string name="preference_option_clear_txt">"All K-9 Mail events on the watch will be cleared, continue?"</string>
-    <string name="clear_success">All events have been deleted</string>
-    <string name="clear_failure">Failed to delete events</string>
+    <string name="preference_option_clear">Очистить события</string>
+    <string name="preference_option_clear_txt">"Все события K-9 Mail в часах будут удалены, продолжить?"</string>
+    <string name="clear_success">Все события удалены</string>
+    <string name="clear_failure">Сбой удаления событий</string>
 
-    <string name="preference_status_error">Error</string>
-    <string name="preference_status_k9_not_installed">K-9 Mail is not installed</string>
-    <string name="preference_status_k9_permission_error">Install K-9 Mail first, then this extension</string>
-    <string name="preference_status_k9_not_enabled">You need to set up an account in K-9 Mail</string>
+    <string name="preference_status_error">Ошибка</string>
+    <string name="preference_status_k9_not_installed">Приложение K-9 Mail не установлено</string>
+    <string name="preference_status_k9_permission_error">Сначала установите K-9 Mail, затем это расширение</string>
+    <string name="preference_status_k9_not_enabled">Настройте ящик в K-9 Mail</string>
 </resources>
