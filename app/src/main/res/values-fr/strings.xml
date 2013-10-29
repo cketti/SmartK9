@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">K-9 Mail pour SmartWatch</string>
+    <string name="preference_activity_title">Réglages de K-9 Mail pour SmartWatch</string>
+    <string name="configuration_text">Réglages de K-9 Mail pour SmartWatch</string>
+
+    <string name="extension_name">K-9 Mail</string>
+    <string name="source_name">K-9 Mail</string>
+
+    <string name="action_event_1">Ouvrir sur le téléphone</string>
+    <string name="action_event_2">Marqué comme lu</string>
+    <string name="action_event_3">Supprimé</string>
+
+    <!-- Text that is read before the display name on accessories that supports text to speech -->
+    <string name="text_to_speech">Nouveau message de </string>
+
+    <string name="preference_category_other">Autre</string>
+    <string name="preference_option_email_developer_title">Adresse électronique du developpeur</string>
+    <string name="preference_option_more_apps_title">Plus d\'applications</string>
+    <string name="preference_option_more_apps_summary">Plus d\'applications par cketti</string>
+
+    <string name="preference_option_clear">Effacer tous les évènements</string>
+    <string name="preference_option_clear_txt">Tous les évènements K-9 Mail sur la montre vont être supprimés, continuer ?</string>
+    <string name="clear_success">Tous les évènements ont été supprimés</string>
+    <string name="clear_failure">Erreur lors de la suppression des évènements</string>
+
+    <string name="preference_status_error">Erreur</string>
+    <string name="preference_status_k9_not_installed">K-9 Mail n\'est pas installé</string>
+    <string name="preference_status_k9_permission_error">Installez K-9 Mail en premier, puis cette extension</string>
+    <string name="preference_status_k9_not_enabled">Vous devez paramétrer un compte dans K-9 Mail</string>
+</resources>

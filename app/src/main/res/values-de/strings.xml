@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">K-9 Mail für SmartWatch</string>
+    <string name="preference_activity_title">K-9 Mail für SmartWatch Einstellungen</string>
+    <string name="configuration_text">K-9 Mail für SmartWatch Einstellungen</string>
+
+    <string name="extension_name">K-9 Mail</string>
+    <string name="source_name">K-9 Mail</string>
+
+    <string name="action_event_1">Auf dem Telefon öffnen</string>
+    <string name="action_event_2">Als gelesen markieren</string>
+    <string name="action_event_3">Löschen</string>
+
+    <!-- Text that is read before the display name on accessories that supports text to speech -->
+    <string name="text_to_speech">Neue Nachricht von </string>
+
+    <string name="preference_category_other">Verschiedenes</string>
+    <string name="preference_option_email_developer_title">Entwickler kontaktieren</string>
+    <string name="preference_option_more_apps_title">Mehr Apps</string>
+    <string name="preference_option_more_apps_summary">Mehr Apps von cketti</string>
+
+    <string name="preference_option_clear">Alle Benachrichtigungen löschen</string>
+    <string name="preference_option_clear_txt">"Alle Benachrichtigungen von K-9 Mail auf der Uhr werden gelöscht. Fortfahren?"</string>
+    <string name="clear_success">Alle Benachrichtigungen wurden gelöscht</string>
+    <string name="clear_failure">Das Löschen der Benachrichtigungen ist fehlgeschlagen</string>
+
+    <string name="preference_status_error">Fehler</string>
+    <string name="preference_status_k9_not_installed">K-9 Mail ist nicht installiert</string>
+    <string name="preference_status_k9_permission_error">Installieren Sie zuerst K-9 Mail, dann diese Erweiterung</string>
+    <string name="preference_status_k9_not_enabled">Sie müssen zuerst ein Konto in K-9 Mail erstellen</string>
+</resources>
