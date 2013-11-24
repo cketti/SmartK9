@@ -11,6 +11,8 @@
     <string name="action_event_2">Als gelesen markieren</string>
     <string name="action_event_3">Löschen</string>
 
+    <string name="delete_confirmation">Nachricht löschen?</string>
+
     <!-- Text that is read before the display name on accessories that supports text to speech -->
     <string name="text_to_speech">Neue Nachricht von </string>
 

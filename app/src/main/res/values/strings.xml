@@ -11,6 +11,8 @@
     <string name="action_event_2">Mark as read</string>
     <string name="action_event_3">Delete</string>
 
+    <string name="delete_confirmation">Delete message?</string>
+
     <!-- Text that is read before the display name on accessories that supports text to speech -->
     <string name="text_to_speech">New message from </string>
 
