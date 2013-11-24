@@ -47,7 +47,7 @@ public class K9PreferenceActivity extends PreferenceActivity {
             }
         });
 
-        preference = findPreference(getText(R.string.preference_key_email_developer));
+        preference = findPreference(getText(R.string.preference_key_send_feedback));
         preference.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 
             @Override

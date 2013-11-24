@@ -17,7 +17,11 @@
     <string name="text_to_speech">Почта от </string>
 
     <string name="preference_category_other">Прочее</string>
-    <string name="preference_option_email_developer_title">Обратная связь</string>
+
+    <!-- Translators: Please include in the translation that I can only answer support
+         questions asked in english -->
+    <!-- MISSING <string name="preference_option_send_feedback_title">Send feedback</string>-->
+
     <string name="preference_option_more_apps_title">Ещё приложения</string>
     <string name="preference_option_more_apps_summary">Другие приложения cketti</string>
 

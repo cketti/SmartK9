@@ -17,7 +17,11 @@
     <string name="text_to_speech">Nouveau message de </string>
 
     <string name="preference_category_other">Autre</string>
-    <string name="preference_option_email_developer_title">Adresse électronique du developpeur</string>
+
+    <!-- Translators: Please include in the translation that I can only answer support
+         questions asked in english -->
+    <!-- MISSING <string name="preference_option_send_feedback_title">Send feedback</string>-->
+
     <string name="preference_option_more_apps_title">Plus d\'applications</string>
     <string name="preference_option_more_apps_summary">Plus d\'applications par cketti</string>
 

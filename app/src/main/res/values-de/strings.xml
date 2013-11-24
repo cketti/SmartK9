@@ -17,7 +17,7 @@
     <string name="text_to_speech">Neue Nachricht von </string>
 
     <string name="preference_category_other">Verschiedenes</string>
-    <string name="preference_option_email_developer_title">Entwickler kontaktieren</string>
+    <string name="preference_option_send_feedback_title">Feedback senden</string>
     <string name="preference_option_more_apps_title">Mehr Apps</string>
     <string name="preference_option_more_apps_summary">Mehr Apps von cketti</string>
 

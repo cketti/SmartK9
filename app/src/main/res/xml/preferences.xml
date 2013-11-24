@@ -16,8 +16,8 @@
 
         <!-- Email developer -->
         <Preference
-                android:key="@string/preference_key_email_developer"
-                android:title="@string/preference_option_email_developer_title"
+                android:key="@string/preference_key_send_feedback"
+                android:title="@string/preference_option_send_feedback_title"
                 android:summary="@string/developer_email_address"/>
 
         <!-- More apps -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="preference_key_email_developer">preference_key_email_developer</string>
+    <string name="preference_key_send_feedback">preference_key_send_feedback</string>
     <string name="preference_key_more_apps">preference_key_more_apps</string>
     <string name="preference_key_clear">preference_key_clear</string>
     <string name="preference_key_error">preference_key_error</string>
