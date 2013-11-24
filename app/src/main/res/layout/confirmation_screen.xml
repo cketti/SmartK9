@@ -1,49 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="@dimen/smart_watch_2_control_width"
+        android:layout_height="@dimen/smart_watch_2_control_height"
+        android:background="#dddddd"
+        tools:ignore="ContentDescription,PxUsage,UselessParent">
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="@dimen/smart_watch_2_control_width"
-                android:layout_height="@dimen/smart_watch_2_control_height"
-                android:background="#dddddd"
-                tools:ignore="ContentDescription,PxUsage,UselessParent" >
-
-        <LinearLayout
-                android:id="@+id/dummy1"
+    <LinearLayout
+            android:id="@+id/dummy1"
             android:layout_width="match_parent"
             android:layout_height="126px"
-                android:gravity="center">
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/delete_confirmation"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/smart_watch_2_text_size_large"
-                    android:id="@+id/textView"/>
-        </LinearLayout>
+            android:gravity="center">
 
-        <LinearLayout
-                android:background="#303030"
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_confirmation"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/smart_watch_2_text_size_large"
+                android:id="@+id/textView"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:background="#303030"
             android:layout_width="109px"
             android:layout_height="50px"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
             android:clickable="true"
             android:id="@+id/button"
-                android:gravity="center">
+            android:gravity="center">
+
         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cancel"
                 android:id="@+id/buttonText"/>
-            </LinearLayout>
+    </LinearLayout>
 
     <View
             android:background="#808080"
             android:layout_alignParentBottom="true"
             android:layout_toRightOf="@id/button"
             android:layout_width="2px"
-            android:layout_height="50px"
-    />
+            android:layout_height="50px"/>
 
     <LinearLayout
             android:background="#303030"
@@ -54,10 +55,12 @@
             android:id="@+id/button2"
             android:clickable="true"
             android:gravity="center">
+
         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/okay"
                 android:id="@+id/button2Text"/>
     </LinearLayout>
+
 </RelativeLayout>
