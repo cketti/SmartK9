@@ -6,5 +6,5 @@
     <string name="preference_key_error">preference_key_error</string>
     <string name="developer_email_address">cketti.apps@gmail.com</string>
     <string name="developer_email_uri">cketti.apps@gmail.com?subject=K-9%20Mail%20for%20SmartWatch</string>
-    <string name="more_apps_uri">https://play.google.com/store/apps/developer?id=cketti</string>
+    <string name="more_apps_uri">market://search?q=pub:cketti</string>
 </resources>
